@@ -1,0 +1,18 @@
+{
+  "slug": "web-research",
+  "title": "Web Research",
+  "tagline": "Researches a question across URLs and returns a cited brief.",
+  "description": "A research analyst agent. Give it a question and a set of URLs (or topics it can fetch from known sources); it pulls the readable text from each page, cross-checks the claims across sources, and returns a dense brief where every fact is traceable to a citation. It flags conflicts, labels single-source and unconfirmed claims, and always ends with a numbered Sources list — it never states unverified claims as fact.",
+  "category": "research",
+  "categoryLabel": "Research",
+  "channels": ["http", "web"],
+  "stack": ["ai-sdk", "ai-gateway"],
+  "eveFeatures": ["tools", "skills"],
+  "tags": ["research", "citations", "fetch"],
+  "model": "anthropic/claude-sonnet-4.6",
+  "difficulty": "intermediate",
+  "path": "templates/web-research",
+  "featured": true,
+  "test": "npx eve dev, then ask: \"Research what an llms.txt file is using these URLs: https://llmstxt.org and https://eve.dev\"",
+  "requires": ["AI Gateway access (Vercel) or an Anthropic API key"]
+}
